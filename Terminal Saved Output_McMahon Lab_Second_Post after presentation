@@ -1,0 +1,198 @@
+Last login: Wed Apr  1 11:04:11 on console
+Petes-MacBook-Pro:~ peterigas$ python
+Python 2.7.10 (default, Oct  6 2017, 22:29:07) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> sample_array = { }
+>>> sample_array[1]=[1;2;3]
+  File "<stdin>", line 1
+    sample_array[1]=[1;2;3]
+                      ^
+SyntaxError: invalid syntax
+>>> sample_array[1]=[1 2 3]
+  File "<stdin>", line 1
+    sample_array[1]=[1 2 3]
+                       ^
+SyntaxError: invalid syntax
+>>> import numpy as np
+>>> sample_array[1]=np.array([1 2 3 ])
+  File "<stdin>", line 1
+    sample_array[1]=np.array([1 2 3 ])
+                                ^
+SyntaxError: invalid syntax
+>>> delta_array = np.linspace(0.05 , 0.7, 4)
+>>> for Y in delta_array:
+...     print(Y)
+... 
+0.05
+0.266666666667
+0.483333333333
+0.7
+>>> delta_array[1]
+0.26666666666666666
+>>> delta_array[0]
+0.050000000000000003
+>>> 
+  [Restored Apr 12, 2020 at 12:59:04 PM]
+Last login: Sun Apr 12 12:58:58 on console
+Restored session: Sun Apr 12 12:57:38 EDT 2020
+Petes-MacBook-Pro:~ peterigas$ python
+Python 2.7.10 (default, Oct  6 2017, 22:29:07) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> delta_array = np.linspace(0.05,0.7,4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> import numpy as np
+>>> delta_array = np.linspace(0.05,0.7,4)
+>>> delta_array.remove(delta_array[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'numpy.ndarray' object has no attribute 'remove'
+>>> delta_array
+array([ 0.05      ,  0.26666667,  0.48333333,  0.7       ])
+>>> delta_array[2:len(delta_array)]
+array([ 0.48333333,  0.7       ])
+>>> delta_array[0]
+0.050000000000000003
+>>> delta_array[1:len(delta_array)]
+array([ 0.26666667,  0.48333333,  0.7       ])
+>>> for II in len(delta_array):
+...     print(II)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> len(delta_array)
+4
+>>> for II in range(len(delta_array)):
+...     print(II)
+... 
+0
+1
+2
+3
+>>> import numpy 
+>>> # from matplotlib import pyplot as plt
+... import matplotlib.pyplot as plt
+>>> import numpy as np
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...     r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+...             if out is None:
+  File "<stdin>", line 4
+    if out is None:
+    ^
+IndentationError: unexpected indent
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...      r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+  File "<stdin>", line 3
+    r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+    ^
+IndentationError: unexpected indent
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...     r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+...     if out is None:
+...             out = np.empty(r.shape)
+...     np.cumsum(r, axis=-1, out=out)
+...     out += np.expand_dims(x0, axis=-1)
+...     return out
+... 
+>>> Z = brownian(x[:,0], N, dt, 0.05, out=x[:,1:])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> x = np.empty((2,N+1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'N' is not defined
+>>> T = 10.0
+>>> # Number of steps.
+... N = 50
+>>> # Time step size
+... dt = T/N
+>>> x = np.empty((2,N+1))
+>>> x[:, 0] = Count_array[X-1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Count_array' is not defined
+>>>         
+...                 
+>>> Count_array = np.linspace(1,5,5)
+>>> x = np.empty((2,N+1))
+>>>                 # declare initial value of the
+...                 # Brownian sampling process.
+... 
+>>>                 # x0 = np.asarray(Count_array[X])
+...                 x[:, 0] = Count_array[X-1]
+  File "<stdin>", line 2
+    x[:, 0] = Count_array[X-1]
+    ^
+IndentationError: unexpected indent
+>>> x = np.empty((2,N+1))
+>>> x[:, 0] = Count_array[X-1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'X' is not defined
+>>> for X in Count_array:
+...     x = np.empty((2,N+1))
+...     x[:, 0] = Count_array[X-1]
+...     Z = brownian(x[:,0], N, dt, 0.05, out=x[:,1:])
+...     return Z
+... 
+  File "<stdin>", line 5
+SyntaxError: 'return' outside function
+>>> for X in Count_array:
+...     x = np.empty((2,N+1))
+...     x[:, 0] = Count_array[X-1]
+...     Z = brownian(x[:,0], N, dt, 0.05, out=x[:,1:])
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "<stdin>", line 3, in brownian
+NameError: global name 'norm' is not defined
+>>> from math import sqrt
+>>> from scipy.stats import norm
+>>> import numpy as np
+>>> np.set_printoptions(threshold=sys.maxsize)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sys' is not defined
+>>> # import array as arr
+... 
+>>> # from matplotlib import pyplot as plt
+... import matplotlib.pyplot as plt
+>>> plt.rcParams.update({'figure.max_open_warning': 0})
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...     r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+...     if out is None:
+...             out = np.empty(r.shape)
+...      np.cumsum(r, axis=-1, out=out)
+  File "<stdin>", line 6
+    np.cumsum(r, axis=-1, out=out)
+                                 ^
+IndentationError: unindent does not match any outer indentation level
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...     r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+...     if out is None:
+...             out = np.empty(r.shape)
+...      np.cumsum(r, axis=-1, out=out)
+  File "<stdin>", line 6
+    np.cumsum(r, axis=-1, out=out)
+                                 ^
+IndentationError: unindent does not match any outer indentation level
+>>> def brownian(x0, n, dt, delta, out=None):
+...     x0 = np.asarray(x0)
+...     r = norm.rvs(size=x0.shape + (n,), scale=delta*sqrt(dt))
+...     if out is None:
+...             out = np.empty(r.shape)
+...     np.cumsum(r, axis=-1, out=out)
+...     out += np.expand_dims(x0, axis=-1)
+...     return out
+... 
+>>> 

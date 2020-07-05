@@ -1,0 +1,238 @@
+Last login: Sat Mar 14 23:58:04 on ttys000
+Petes-MacBook-Pro:~ peterigas$ python --version
+Python 2.7.10
+Petes-MacBook-Pro:~ peterigas$ python3 --version
+Python 3.8.2
+Petes-MacBook-Pro:~ peterigas$ pip install matplotlib
+-bash: pip: command not found
+Petes-MacBook-Pro:~ peterigas$ $pip install matplotlib
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+Petes-MacBook-Pro:~ peterigas$ brew install python3
+-bash: brew: command not found
+Petes-MacBook-Pro:~ peterigas$ %python3
+-bash: fg: %python3: no such job
+Petes-MacBook-Pro:~ peterigas$ % python3 
+-bash: fg: %: no such job
+Petes-MacBook-Pro:~ peterigas$ import sys
+-bash: import: command not found
+Petes-MacBook-Pro:~ peterigas$ import matplotlib.pyplot as plt
+-bash: import: command not found
+Petes-MacBook-Pro:~ peterigas$ sudo apt-get install python-matplotlib
+Password:
+sudo: apt-get: command not found
+Petes-MacBook-Pro:~ peterigas$ pip
+-bash: pip: command not found
+Petes-MacBook-Pro:~ peterigas$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1764k  100 1764k    0     0  2479k      0 --:--:-- --:--:-- --:--:-- 2478k
+Petes-MacBook-Pro:~ peterigas$ python get-pip.py
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pip
+  Downloading pip-20.0.2-py2.py3-none-any.whl (1.4 MB)
+     |████████████████████████████████| 1.4 MB 1.2 MB/s 
+Collecting wheel
+  Using cached wheel-0.34.2-py2.py3-none-any.whl (26 kB)
+Installing collected packages: pip, wheel
+  WARNING: The scripts pip, pip2 and pip2.7 are installed in '/Users/peterigas/Library/Python/2.7/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script wheel is installed in '/Users/peterigas/Library/Python/2.7/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-20.0.2 wheel-0.34.2
+Petes-MacBook-Pro:~ peterigas$ pip install matplotlib
+-bash: pip: command not found
+Petes-MacBook-Pro:~ peterigas$ pip --version
+-bash: pip: command not found
+Petes-MacBook-Pro:~ peterigas$ sudo easy_install pip
+Searching for pip
+Best match: pip 20.0.2
+Adding pip 20.0.2 to easy-install.pth file
+Installing pip script to /usr/local/bin
+Installing pip3.8 script to /usr/local/bin
+Installing pip3 script to /usr/local/bin
+
+Using /Users/peterigas/Library/Python/2.7/lib/python/site-packages
+Processing dependencies for pip
+Finished processing dependencies for pip
+Petes-MacBook-Pro:~ peterigas$ pip --version
+pip 20.0.2 from /Users/peterigas/Library/Python/2.7/lib/python/site-packages/pip (python 2.7)
+Petes-MacBook-Pro:~ peterigas$ pip install matplotlib
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: matplotlib in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (1.3.1)
+Requirement already satisfied: numpy>=1.5 in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from matplotlib) (1.8.0rc1)
+Requirement already satisfied: python-dateutil in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from matplotlib) (1.5)
+Collecting tornado
+  Downloading tornado-5.1.1.tar.gz (516 kB)
+     |████████████████████████████████| 516 kB 916 kB/s 
+Requirement already satisfied: pyparsing>=1.5.6 in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from matplotlib) (2.0.1)
+Collecting nose
+  Downloading nose-1.3.7-py2-none-any.whl (154 kB)
+     |████████████████████████████████| 154 kB 5.4 MB/s 
+Collecting futures
+  Downloading futures-3.3.0-py2-none-any.whl (16 kB)
+Collecting singledispatch
+  Downloading singledispatch-3.4.0.3-py2.py3-none-any.whl (12 kB)
+Collecting backports_abc>=0.4
+  Downloading backports_abc-0.5-py2.py3-none-any.whl (5.2 kB)
+Requirement already satisfied: six in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from singledispatch->tornado->matplotlib) (1.4.1)
+Building wheels for collected packages: tornado
+  Building wheel for tornado (setup.py) ... done
+  Created wheel for tornado: filename=tornado-5.1.1-cp27-cp27m-macosx_10_13_intel.whl size=452008 sha256=fa915fa4ab54b4e589439484c48a3af2ed80f3dea55251f0c4952615ad749edc
+  Stored in directory: /Users/peterigas/Library/Caches/pip/wheels/d8/83/af/e0dc6afbf3a2c51af8d6e3f9fbe790d0c581c2de05bc5d50f5
+Successfully built tornado
+Installing collected packages: futures, singledispatch, backports-abc, tornado, nose
+  WARNING: The scripts nosetests and nosetests-2.7 are installed in '/Users/peterigas/Library/Python/2.7/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed backports-abc-0.5 futures-3.3.0 nose-1.3.7 singledispatch-3.4.0.3 tornado-5.1.1
+Petes-MacBook-Pro:~ peterigas$ sudo apt-get install python3-matplotlib
+sudo: apt-get: command not found
+Petes-MacBook-Pro:~ peterigas$ pip3 install matplotlib
+Collecting matplotlib
+  Downloading https://files.pythonhosted.org/packages/7e/6e/3eb2e425945ef1e95fe797e6a6f020c48d2e83f091b1fd723e437c046e1b/matplotlib-3.2.0-cp38-cp38-macosx_10_9_x86_64.whl (12.4MB)
+     |████████████████████████████████| 12.5MB 9.0MB/s 
+Collecting python-dateutil>=2.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+     |████████████████████████████████| 235kB 5.5MB/s 
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/22/a7/8f7706e8c1e847b9816bbb2c4c341e2ae9568653f17956f839574ed62815/kiwisolver-1.1.0-cp38-cp38-macosx_10_9_x86_64.whl (61kB)
+     |████████████████████████████████| 71kB 5.5MB/s 
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/5d/bc/1e58593167fade7b544bfe9502a26dc860940a79ab306e651e7f13be68c2/pyparsing-2.4.6-py2.py3-none-any.whl (67kB)
+     |████████████████████████████████| 71kB 6.0MB/s 
+Collecting numpy>=1.11 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/f2/81/43f7a2c7893a58c0f304b44f4c084a7918ce295a1b6dd9275bcddccb7feb/numpy-1.18.2-cp38-cp38-macosx_10_9_x86_64.whl (15.2MB)
+     |████████████████████████████████| 15.2MB 4.0MB/s 
+Requirement already satisfied: six>=1.5 in ./Library/Python/3.8/lib/python/site-packages (from python-dateutil>=2.1->matplotlib) (1.14.0)
+Requirement already satisfied: setuptools in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from kiwisolver>=1.0.1->matplotlib) (41.2.0)
+Installing collected packages: python-dateutil, kiwisolver, cycler, pyparsing, numpy, matplotlib
+Successfully installed cycler-0.10.0 kiwisolver-1.1.0 matplotlib-3.2.0 numpy-1.18.2 pyparsing-2.4.6 python-dateutil-2.8.1
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Petes-MacBook-Pro:~ peterigas$ pip install --upgrade pip
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already up-to-date: pip in ./Library/Python/2.7/lib/python/site-packages (20.0.2)
+Petes-MacBook-Pro:~ peterigas$ exp(-3/2)
+-bash: syntax error near unexpected token `-3/2'
+Petes-MacBook-Pro:~ peterigas$ exp(-3)
+-bash: syntax error near unexpected token `-3'
+Petes-MacBook-Pro:~ peterigas$ 
+  [Restored Mar 18, 2020 at 10:52:59 AM]
+Last login: Wed Mar 18 10:52:53 on console
+Petes-MacBook-Pro:~ peterigas$ python
+Python 2.7.10 (default, Oct  6 2017, 22:29:07) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exp(-1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'exp' is not defined
+>>> import numpy as np
+>>> x_values = np.linspace(1,10,10)
+>>> x_values
+array([  1.,   2.,   3.,   4.,   5.,   6.,   7.,   8.,   9.,  10.])
+>>> y_values = np.linspace(1,15,10)
+>>> y_values
+array([  1.        ,   2.55555556,   4.11111111,   5.66666667,
+         7.22222222,   8.77777778,  10.33333333,  11.88888889,
+        13.44444444,  15.        ])
+>>> en(x_values)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'en' is not defined
+>>> len(x_values)
+10
+>>> range(len(x_values))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> x_values[0]
+1.0
+>>> x_values[1]
+2.0
+>>> x=np.empty([10,10])
+>>> x
+array([[  2.00000000e+000,   2.32034962e+077,   1.25640894e-320,
+         -6.55164434e-018,   1.91418184e-313,   6.92983920e-310,
+         -3.68576571e+185,   3.18693276e-313,   6.92983920e-310,
+          8.37720130e+057],
+       [  4.46040981e-313,   6.92983920e-310,   1.18575755e-322,
+          9.73469813e-309,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000],
+       [  0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   2.00000000e+000,
+          2.32034962e+077],
+       [ -5.18072369e+088,   3.89388142e-308,   2.00000000e+000,
+          2.00000000e+000,   4.94065646e-324,   2.16195060e-314,
+          2.16195060e-314,   4.94065646e-324,   6.95320175e-310,
+          0.00000000e+000],
+       [  4.94065646e-324,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000],
+       [  0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000],
+       [  0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          3.30916851e+268,   2.16137102e-314,   6.92983920e-310,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000],
+       [  0.00000000e+000,   0.00000000e+000,  -2.00389304e+000,
+         -1.29073732e-231,   1.26974871e-321,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   7.51308734e+253,
+          2.16534038e-314],
+       [  6.92983918e-310,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000,   1.33504432e-307,   2.00000000e+000,
+          2.00000000e+000],
+       [  7.08984202e-321,   0.00000000e+000,   0.00000000e+000,
+          8.37720130e+057,   6.92983927e-310,   0.00000000e+000,
+          0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
+          0.00000000e+000]])
+>>> x=np.zeros([10,10])
+>>> x
+array([[ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.]])
+>>> new_array_2 = np.zeros([15,10])
+>>> new_array_2
+array([[ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.]])
+>>> new_array_2[1]
+array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
+>>> new_array_2[2]
+array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
+>>> x[1]
+array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
+>>> x[3]
+array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
+>>> 
